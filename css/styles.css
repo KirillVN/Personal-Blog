@@ -117,9 +117,10 @@ span:active {
 }
 .title-item {
   background-image: url("../img/aboume1.jpeg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 500px;
 }
 .main-title {
   width: 40%;
@@ -243,6 +244,13 @@ a.logo:active {
     border: 0.1rem solid rgb(255, 215, 0);
     text-align: center;
   }
+  .title-item {
+    background-image: url("../img/aboume1.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+  }
 }
 .content-grid {
   display: grid;
@@ -252,48 +260,22 @@ a.logo:active {
   
 }
 .content-item {
-  background-color: rgb(240, 240, 240);
+  position: relative;
+  background-color: white;
   padding: 1rem;
   width: 85%;
-  height: 400px;
+  max-height:500px;
   margin: 0 auto;
   overflow: scroll;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: .1rem solid rgb(255, 215, 0);
+}
+
+.gallery-wrapper {
+  background-color: #fff;
 }
 
 .content-item img {
   width: 100%;
   object-fit: cover;
-}
-
-/* DIET */
-.grid {
-  display: grid;
-  gap: 2rem;
-  grid-template: auto / repeat(auto-fit, minmax(20rem, 1fr));
-}
-.grid-img {
-  width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  margin: 0 auto;
-  background-color: rgb(100, 100, 100);
-  object-position: center;
-}
-
-.grid-img img {
-  width: 100%;
-  margin-top: -5rem;
-  border-radius: 1rem;
-}
-.title-diet {
-  text-align: center;
-}
-.title-diet img {
-  width: 2.5rem;
-  margin-bottom: 1rem;
-}
-.title-diet h2 {
-  margin: 0;
-  margin-bottom: 1rem;
 }
