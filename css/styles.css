@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:ital,wght@0,300;0,400;0,700;1,200;1,300&display=swap");
+html {
+  background: linear-gradient(to right, #e3e3e3, #e0e0e0, #c8c8c8 90%);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e3e3e3, #e0e0e0, #c8c8c8 90%);
+
+  position: relative;
+  z-index: 2;
+}
+
+* {
+  box-sizing: border-box;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  padding: .5rem;
+ 
+}
+.fixed-position {
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(to right, #e3e3e3, #e0e0e0, #c8c8c8 90%);
+  width: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+ul.menu-list {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.menu-list li {
+  width: 20%;
+}
+
+ul {
+  max-width: 100%;
+  display: block;
+}
+li {
+  padding: 0 1rem;
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+li:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.logo {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+  color: initial;
+  letter-spacing: 1.5px;
+}
+a.logo:active {
+  text-shadow: 2px 2px 2px rgb(192, 192, 192);
+}
+
+a.menu-nav {
+  padding: 0 1rem;
+
+  color: initial;
+  letter-spacing: 3px;
+}
+a.menu-nav:hover {
+  border-bottom: 2px solid black;
+  transition: 0.1s;
+  color: rgb(92, 92, 92);
+}
+a.menu-nav:active {
+  color: black;
+}
+
+span {
+  color: rgb(32, 32, 32);
+  padding: 0 2px;
+  font-weight: 400;
+  margin: 0.1em;
+  position: relative;
+  top: -2px;
+  border: 5px solid rgb(255, 215, 0);
+  box-shadow: 5px 5px 6px rgb(143, 143, 143);
+}
+span:active {
+  box-shadow: 5px 5px 6px rgb(43, 43, 43);
+}
+
+.main {
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+  width: 100%;
+}
+.title-item {
+  background-image: url("../img/aboume1.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-title {
+  width: 40%;
+  float: right;
+  text-align: end;
+}
+span.font {
+  font-family: "GFS Didot", serif;
+  font-weight: 700;
+}
+/* acne==============
+======================= */
+a.logo {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+a.logo:active {
+  text-shadow: 2px 2px 2px rgb(192, 192, 192);
+}
+.menu-appear {
+  display: none;
+  height: 100vh;
+}
+.icon-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .wrapper {
+    width: 100%;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body,
+  h1,
+  h2,
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    padding: 0;
+  }
+  a.logo {
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    font-weight: 400;
+  }
+  .content-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    box-shadow: none;
+  }
+  .main {
+    text-align: center;
+    padding: 0;
+    color: white;
+    font-size: 1.1em;
+  }
+  ul.menu-list {
+    display: none;
+  }
+  .icon-menu {
+    width: 20px;
+    margin: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  p.content-info {
+    border: 2px solid rgb(255, 248, 248);
+    padding: 0.3rem;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+  }
+
+  .menu-appear {
+    display: block;
+    position: fixed;
+    padding: 1rem 2rem;
+    text-align: right;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
+    padding-top: 2rem;
+    z-index: 999;
+    transform: translateX(+200%);
+    transition: 1s;
+  }
+  .list-item {
+    text-align: center;
+    padding-right: 0.7rem;
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 0.1rem solid rgb(255, 215, 0);
+  }
+  .exit-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .btn-appear {
+    transform: scale(1, 1);
+    transition: 1s;
+  }
+  span {
+    border: 0.1rem solid rgb(255, 215, 0);
+    text-align: center;
+  }
+}
+.content-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template: auto / repeat(auto-fit, minmax(20rem, 1fr));
+  margin-bottom: 2rem;
+  
+}
+.content-item {
+  background-color: rgb(240, 240, 240);
+  padding: 1rem;
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* DIET */
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template: auto / repeat(auto-fit, minmax(20rem, 1fr));
+}
+.grid-img {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: rgb(100, 100, 100);
+  object-position: center;
+}
+
+.grid-img img {
+  width: 100%;
+  margin-top: -5rem;
+  border-radius: 1rem;
+}
+.title-diet {
+  text-align: center;
+}
+.title-diet img {
+  width: 2.5rem;
+  margin-bottom: 1rem;
+}
+.title-diet h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
